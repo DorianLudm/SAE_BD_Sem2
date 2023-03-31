@@ -2,7 +2,7 @@
 
 ## 7 - Analyse Statistique Mathématique
 
-##### 1) Extraire de la base le nombre de ventes effectuées en 2022 par mois, vous obtenez un premier jeu de 12 valeurs noté V.
+## 1) Extraire de la base le nombre de ventes effectuées en 2022 par mois, vous obtenez un premier jeu de 12 valeurs noté V.
 
 Voici la requête associée au jeu de données :  
 ```sql
@@ -54,10 +54,10 @@ f = n/N
 bar(x,n)
 ```
 m est la table des fréquences, x représente les modalités dépouillés, n l'effectif, et f les fréquences.  
-Une fois l'ensemble des données calculées, on affiche le graphe ci-dessous grâce à la commande bar(x,n).
+Une fois l'ensemble des données calculées, on affiche le graphe ci-dessous grâce à la commande bar(x,n). On trouve que le mod est alors 31 et 40.  
 ![Graphe de fréquences](./Images/Fr%C3%A9quences.png)
 
-##### 2) Extraire le nombre d’enchêres de 2022 par mois, ces valeurs constituent une seconde statistique notée E. Vous obtenez ainsi la statistique double (V, E). Tracez le nuage de points (V, E) :  
+## 2) Extraire le nombre d’enchêres de 2022 par mois, ces valeurs constituent une seconde statistique notée E. Vous obtenez ainsi la statistique double (V, E). Tracez le nuage de points (V, E) :  
 Un nouvel ensemble de données noté E est créer, il sera caractérisé par la requête suivante :  
 ```sql
 select MONTH(finVe) Mois, count(dateHeure)
@@ -100,7 +100,7 @@ Que peut-on en déduire ?
 Ici le coefficient étant proche de 1, on peut dire que la corrélation linéaire vu précédemment entre V et E est donc réel, car elle est prouvé mathématiquement à l'aide de ce coefficient.
 
 
-#####3) En vous servant de la question précédente, quel nombre de ventes (sur un mois donné) anticipez vous si le nombre d’enchères sur ce même mois est de 285.
+## 3) En vous servant de la question précédente, quel nombre de ventes (sur un mois donné) anticipez vous si le nombre d’enchères sur ce même mois est de 285.
 
 
 Pour pouvoir retrouver l'antécédent d'un nuage de point, il faut alors transformer celui-ci en une droite. Pour cela on utilise ce qu'on appelle droite de régression.  
@@ -123,4 +123,4 @@ x = (285 - 22.357538)/6.3029046
 x = 41.670067797
 Si le nombre d'enchère sur un mois donné est de 285, on peut alors prévoir qu'environ 42 ventes serons effectuer pendant ce même mois.
 
-#####Par Ludmann Dorian 1.3b
+## Par Ludmann Dorian 1.3b
