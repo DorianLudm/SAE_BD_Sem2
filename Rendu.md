@@ -65,7 +65,7 @@ On obtient alors les valeurs suivantes :
 ```
 
 
-Il y a alors 46 couples objet-utilisateur qui répondent aux critères de la recherche
+Il y a alors 46 couples objet-utilisateur qui répondent aux critères de la recherche.  
 
 # Section 4 – Insertion dans la base de données
 Pour répondre à la demande faite dans la section 4, il suffit d'ajouter dans la base de données le nouvel utilisateur ainsi que l'objet pour ensuite pouvoir insérer la vente. Comme l'objet ne possède pas de photo, il n'y as pas d'autre insert à ajouter.  
@@ -82,3 +82,22 @@ insert into VENTE(idVe,prixBase,prixMin,debutVe,finVe,idSt,idOb) values
 	(378421543,40,80,STR_TO_DATE('23/3/2023:00:00:00','%d/%m/%Y:%h:%i:%s'),DATE_ADD(STR_TO_DATE('30/3/2023:23:59:59','%d/%m/%Y:%h:%i:%s'), INTERVAL 7 DAY),2,734514);
 ```
 # Rendu
+
+## Synthèse :  
+L'ensemble des livrables à été effectué, mais les requêtes auraient pue être perfectionner en les optimisant. En effet, certaines d'entre elles répondent aux problème mais de manière non efficace.
+
+## Analyse :  
+La plus grande difficulté rencontrée durant cette SAE était de ne pas se limiter aux connaissances du second semestre, mais de réutilliser notamment les notions vu durant le premier semestre, avec notamment les requêtes imbriquées par IN.  
+Grâce à cette SAE, j'ai pu approfondir mes connaissances sur le "GROUP BY", j'ai pu apprendre comment on peu utiliser des résultats de requêtes SQL pour pouvoir faire tout type de graphe, et enfin j'ai pu découvrir la fonction "LIMIT".
+
+## Démonstration de compétences
+
+La SAE à pour but de travailler deux compétences :
+- AC14.01 : Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)
+- AC14.02 : Visualiser des données  
+
+J'ai pu mettre en oeuvre la compétence 14.02 en utilisant utilisant les données des requêtes en les transformants en graphes. Cette compétence a aussi été travaillé lors de la création des requêtes en utilisants celles-ci dans le terminal.  
+La seconde compétence 14.01 à quand à elle était utilisé lors de la création des requêtes ainsi lors de l'ajout de données dans la base de données via les inserts.  
+
+
+##### Par Ludmann Dorian 1.3b
